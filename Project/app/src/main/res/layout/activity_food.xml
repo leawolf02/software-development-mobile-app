@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#FFF5E8">
+
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="My favorite Finnish dish"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Finnish salmon soup (lohikeitto) is warm, creamy and perfect for cold days!"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleText" />
+
+    <Switch
+        android:id="@+id/recipeToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Show recipe"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/infoText"
+        android:contentDescription="Toggle to show recipe" />
+
+    <TextView
+        android:id="@+id/recipeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:text="Recipe:\n\n- 400g salmon\n- 4 potatoes\n- 2 carrots\n- 1 onion\n- 1L water\n- 200ml cream\n- Salt, pepper, dill\n\n1. Boil potatoes and vegetables.\n2. Add salmon.\n3. Add cream and spices.\n4. Cook 5 min.\n5. Add dill."
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/recipeToggle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

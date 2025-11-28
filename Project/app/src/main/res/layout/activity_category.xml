@@ -1,0 +1,80 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFF5E8">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Select a Category"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#3BBF3B"
+        android:text="Finnish Language"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <Button
+        android:id="@+id/btnActivities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activities"
+        android:backgroundTint="#3BBF3B"
+        app:layout_constraintTop_toBottomOf="@id/btnLanguage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/btnFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Favorite Finnish Dish"
+        android:backgroundTint="#3BBF3B"
+        app:layout_constraintTop_toBottomOf="@id/btnActivities"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/btnMoments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Best Moments"
+        android:backgroundTint="#3BBF3B"
+        app:layout_constraintTop_toBottomOf="@id/btnFood"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/btnTips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Checklist"
+        android:backgroundTint="#3BBF3B"
+        app:layout_constraintTop_toBottomOf="@id/btnMoments"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
